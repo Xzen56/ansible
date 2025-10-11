@@ -1,0 +1,29 @@
+- name : "Surya"
+  dob: 01-010-10
+  age: 25
+  address: 
+  - doorno: 2-2
+    steet: "MG Road"
+    pin: 52525
+
+  - doorno: 2-2
+    steet: "MG Road"
+    pin: 52525
+
+  - doorno: 2-2
+    steet: "MG Road"
+    pin: 52525  
+
+  - doorno: 2-2
+    steet: "MG Road"
+    pin: 52525 
+
+  - doorno: 2-2
+    steet: "MG Road"
+    pin: 52525
+  skils:
+  - java
+  - Python
+  - Ruby
+  
+
