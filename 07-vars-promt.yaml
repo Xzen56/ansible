@@ -1,0 +1,11 @@
+- name: variables from the promt
+  hosts: localhost
+  connection: local
+  vars_prompt:
+  - name: username
+    promt: what's your username?
+    private: false
+  tasks:
+  - name: print th credentials
+    ansible.buitlin.debug:
+      msg: "hello username {{ username }}"
