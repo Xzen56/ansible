@@ -3,8 +3,8 @@
   connection: local
   vars:
     name: from play level
-  vars_files:
-    course.yaml
+  # vars_files:
+  #   course.yaml
   vars_prompt:
   - name: name
     prompt: what's your name?
