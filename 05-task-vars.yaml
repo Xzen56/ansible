@@ -2,12 +2,12 @@
   hosts: localhost
   connection: local
   vars:
-    course: The Redemption
+    course: The Redemption # play level variables
     duration: 1000hrs
     trainer: surya
   tasks:
   - name: print the msg
     vars: 
-      course: Ansible
+      course: Ansible #preference always task level
     ansible.builtin.debug:
       msg: "Courese name is: {{course}}, Duration: {{duration}}, trainer: {{trainer}}"
