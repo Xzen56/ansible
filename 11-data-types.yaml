@@ -17,5 +17,7 @@
 
   tasks:
   - name: print the course.yaml
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "course name: {{Course}}, Duration{{Duration}}, is it live?"
+
+
