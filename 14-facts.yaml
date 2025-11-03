@@ -1,7 +1,7 @@
 - name: check the facts
   hosts: local
   connection: local
-  becoome: yes
+  become: yes
 
   tasks:
   - name: install and check the nginx
