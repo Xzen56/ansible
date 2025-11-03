@@ -16,3 +16,12 @@
       ansible.builtin.debug:
         msg: "Name: {{ name }}"
       
+
+
+      #1.  args or CLI
+      #2 from promt
+      #3 files
+      #4 promt
+      #5 play level
+      #6 inventory
+      
