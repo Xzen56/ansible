@@ -4,8 +4,8 @@
   vars:
     tech: deops, ansible, shell, limux
     tags:
-    Application: payment
-    Env: dev
+      Application: payment
+      Env: dev
   tasks: 
   - name: default variable
     ansible.builtin.debug:
@@ -17,5 +17,5 @@
 
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "tags are: {{tags | dic2items }}"
+      msg: "Tags are : {{tags | dic2items }}"
 
