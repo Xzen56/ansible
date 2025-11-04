@@ -9,8 +9,8 @@
     listtags:
     - key: Application
       value: payment
-    - key: Application
-      value: payment
+    - key: env
+      value: dollor
   tasks: 
   - name: default variable
     ansible.builtin.debug:
