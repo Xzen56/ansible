@@ -57,3 +57,12 @@
   - name: validate IP addres
     ansible.builtin.debug: 
       msg: "{{ IPaddress | ansible.utils.ipv4 }}"
+
+
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: print the output\
+    ansible.builtin.debug:
+      msg: "commandouput: {{command_output}}"
