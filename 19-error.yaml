@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: check the user exists or not
-    ansible.builtin.debug: id roboshop
+    ansible.builtin.command: id roboshop
     register: user_output
     ignore_errors: yes
 
