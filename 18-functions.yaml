@@ -70,8 +70,9 @@
 
   - name: redirect the output
     #ansible.builtin.shell: ls -ltr > /tmp/output.txt
-    ansible.builtin.command: ls -ltr 
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
     register: reditect_output
+    ignore_errors: true
 
   - name: print the redirect_output
     ansible.builtin.debug:
