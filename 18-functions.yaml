@@ -70,7 +70,7 @@
 
   - name: redirect the output
     #ansible.builtin.shell: ls -ltr > /tmp/output.txt
-    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.command: ls -ltr 
     register: reditect_output
 
   - name: print the redirect_output
