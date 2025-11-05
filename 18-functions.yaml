@@ -55,4 +55,5 @@
 
 
   - name: validate IP addres
-    ansible.builtin.debug: "{{ IPaddress | ansible.utils.ipv4 }}"
+    ansible.builtin.debug: 
+      msg: "{{ IPaddress | ansible.utils.ipv4 }}"
