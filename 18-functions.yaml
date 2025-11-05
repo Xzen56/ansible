@@ -5,7 +5,7 @@
     tech: deops, ansible, shell, limux
     name: "Suryaaaa"
     gmail: Info@GMAIL.COM
-    IPaddress: 345.345.345.3485
+    IPaddress: 132.162.0.0
     tags:
       Application: payment
       Env: dev
