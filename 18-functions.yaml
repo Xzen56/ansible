@@ -69,9 +69,18 @@
       msg: "{{command_output}}"
 
   - name: redirect the output
-    ansible.builtin.command: ls -ltr
+    #ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt
     register: reditect_output
 
-  - name: print the command_output
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "{{reditect_output}}"
+
+  - name: redirect the output using the shell
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    register: reditect_output
+
+  - name: print the redirect_output shell
     ansible.builtin.debug:
       msg: "{{reditect_output}}"
