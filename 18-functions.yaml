@@ -4,6 +4,7 @@
   vars:
     tech: deops, ansible, shell, limux
     name: "Suryaaaa"
+    gmail: Info@GMAIL.COM
     tags:
       Application: payment
       Env: dev
@@ -46,3 +47,7 @@
   - name: lower case to upper case
     ansible.builtin.debug:
       msg: "{{name | upper}}"
+
+  - name: lower case to lower case
+    ansible.builtin.debug:
+      msg: "{{name | lower}}"
