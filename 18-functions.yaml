@@ -5,6 +5,7 @@
     tech: deops, ansible, shell, limux
     name: "Suryaaaa"
     gmail: Info@GMAIL.COM
+    IPaddress: 345.345.345.3485
     tags:
       Application: payment
       Env: dev
@@ -51,3 +52,8 @@
   - name: lower case to lower case
     ansible.builtin.debug:
       msg: "{{gmail | lower}}"
+
+
+  - name: validate IP addres
+    ansible.builtin.debug:
+      msg: "{{IPaddress | ansible.utils.ip4}}"
